@@ -2,6 +2,7 @@ const express = require("express")
 const path = require("path")
 const bcrypt = require("bcrypt")
 const collection = require("./config")
+require("dotenv").config()
 
 
 const app = express()

@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-const connect = mongoose.connect("mongodb+srv://timorodr:R0dr1guez@cluster1.ytaucm1.mongodb.net/Login") // copy connection string from database three dot menu
+const connect = mongoose.connect(process.env.DATABASE_URL) // copy connection string from database three dot menu
 
 connect.then(() => {
     console.log("Database successfully connected")
